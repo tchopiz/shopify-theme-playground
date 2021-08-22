@@ -1,0 +1,53 @@
+<div id="Banner-{{ section.id }}">
+  <nav>
+        <div style='display: flex;justify-content: space-between; align-items: center;width: 100%; padding: 24px 171px;height: 60px;background:rgba(216, 216, 216, 0.4);color:white; '>
+        <div style='  display: flex;align-items: center;font-size: 20px;line-height: 28px;gap: 10px;height: 22px;font-weight: 500;'>
+          <span>QUESTIONS?</span>
+          <span>(929) 566-7788</span>
+        </div>
+        <div style='  display: flex;align-items: center;font-size: 20px;line-height: 28px;gap: 10px;height: 22px;font-weight: 500;'>
+          <span>US</span>
+        </div>
+      </div>
+  
+  </nav>
+  <div>
+    <div>svg icon</div>
+    <div><button>sign in</button></div>
+  </div>
+  <div>
+    <div>
+      <div>
+        <h2>SUPERPOWERED </h2>
+        <h2>PET IDENTIFICATION</h2>
+        <h2>SYSTEM</h2>
+        <hr>
+      </div>
+
+      <p>Every ID your pet needs linked to their whole pack. </p>
+
+      <button>SHOP UPET</button>
+      
+      </div>
+        <div>image</div>
+      </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image banner",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
