@@ -1,0 +1,16 @@
+<div>
+  {% assign hassanVariable= "alaa,lina,maraim" %}
+  {% assign array = hassanVariable | split: "," %}
+  <ul>
+    {%for name in array %}
+      {% if name.size > 4 %}
+        <li>{{name}}</li>
+      {% else %}
+        <li>hello
+          {{name}}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  {{ array }}
+</div>
