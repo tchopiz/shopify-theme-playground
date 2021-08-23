@@ -82,6 +82,7 @@
     </div>
 
     <div class="card-information">
+      {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product_card_product %}
       <div class="card-information__wrapper">
         {%- if show_vendor -%}
           <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
