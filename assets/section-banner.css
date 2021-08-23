@@ -1,12 +1,102 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("https://d2weq17kiduf7p.cloudfront.net/fonts/Raleway/Raleway-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://d2weq17kiduf7p.cloudfront.net/fonts/Raleway/Raleway-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://d2weq17kiduf7p.cloudfront.net/fonts/Raleway/Raleway-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://d2weq17kiduf7p.cloudfront.net/fonts/Raleway/Raleway-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: bolder;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://d2weq17kiduf7p.cloudfront.net/fonts/Raleway/Raleway-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: bolder;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://d2weq17kiduf7p.cloudfront.net/fonts/Raleway/Raleway-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: bolder;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("https://d2weq17kiduf7p.cloudfront.net/fonts/Raleway/Raleway-Black.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: bolder;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("https://d2weq17kiduf7p.cloudfront.net/fonts/Icomoon/icomoon.eot?xmfroe");
+  src: url("https://d2weq17kiduf7p.cloudfront.net/fonts/Icomoon/icomoon.eot?xmfroe#iefix")
+      format("embedded-opentype"),
+    url("https://d2weq17kiduf7p.cloudfront.net/fonts/Icomoon/icomoon.ttf?xmfroe")
+      format("truetype"),
+    url("https://d2weq17kiduf7p.cloudfront.net/fonts/Icomoon/icomoon.woff?xmfroe")
+      format("woff"),
+    url("https://d2weq17kiduf7p.cloudfront.net/fonts/Icomoon/icomoon.svg?xmfroe#icomoon")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Raleway", Helvetica, Arial, sans-serif !important;
+  -webkit-font-feature-settings: "lnum";
+  -moz-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+  font-size: 16px;
+  color: #313131;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
 .Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 24px 171px;
+  padding: 24px 0px;
   height: 60px;
   background: rgba(0, 0, 0, 0.4);
   color: white;
+  margin-bottom: 64px;
+  width: 100%;
+  padding: 0 171px;
 }
 
 .HeaderTextDiv {
@@ -17,6 +107,197 @@
   gap: 10px;
   height: 22px;
   font-weight: 500;
+}
+
+.HeaderFlagDiv {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  line-height: 28px;
+  gap: 10px;
+  height: 22px;
+  font-weight: 500;
+}
+
+.Container {
+  background-color: #464646;
+  height: 915px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  padding: 0 171px;
+}
+
+.figma-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0.5;
+}
+
+.Container::before {
+  content: " ";
+  position: absolute;
+  width: 1276px;
+  height: 1172px;
+  left: -473px;
+  top: -381px;
+
+  background: radial-gradient(
+    40.96% 40.96% at 44.28% 53.24%,
+    rgba(19, 19, 19, 0.5) 0%,
+    rgba(47, 47, 47, 0) 100%
+  );
+}
+
+.Container::after {
+  content: " ";
+  position: absolute;
+  width: 1471px;
+  height: 1351px;
+  left: 533px;
+  top: 19px;
+
+  background: radial-gradient(
+    40.96% 40.96% at 44.28% 53.24%,
+    rgba(19, 19, 19, 0.8) 0%,
+    rgba(47, 47, 47, 0) 100%
+  );
+}
+
+.LandingAppBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 122px;
+  z-index: 400;
+}
+
+.upet-icon {
+  z-index: 500;
+  cursor: pointer;
+}
+
+.MainTextContainer {
+  height: 191px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+
+.SuperpoweredTitle {
+  height: 50px;
+  color: white;
+  margin: 0px;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 70px;
+}
+
+.IdentificationTitle {
+  height: 50px;
+  color: #02e0b1;
+  margin: 0px;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 800;
+}
+
+.IdentificationTitleSecondLine {
+  height: 50px;
+  color: #fff;
+  margin: 0px;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 800;
+}
+
+.Divider {
+  height: 50px;
+  width: 4.5rem;
+  height: 10px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+.Description {
+  width: 566px;
+  color: white;
+  font-size: 36px;
+  margin: 0px;
+  line-height: 42px;
+  margin-bottom: 80px;
+}
+
+.MainButton {
+  background: #02e0b1;
+  opacity: 0.9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 2px;
+  width: 250px;
+  height: 60px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0 auto;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  /* White */
+  color: #ffffff;
+}
+
+.Grid {
+  display: flex;
+  position: relative;
+}
+
+.petImageContainer {
+  position: absolute;
+  top: -78px;
+  right: -173px;
+  z-index: 500;
+}
+
+.ButtonLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 70px;
+  height: 59px;
+  padding: 7px 10px;
+  cursor: pointer;
+  z-index: 500;
+}
+
+.ButtonLink button {
+  border: none;
+}
+
+.avatar-container {
+  width: 44px;
+  height: 44px;
+  margin-right: 16px;
+}
+
+.avatar-container svg {
+  width: 44px !important;
+  height: 44px !important;
+}
+
+.button-text {
+  font-size: 28px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+
+  /* White */
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 1200px) {

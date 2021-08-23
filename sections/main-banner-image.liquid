@@ -1,40 +1,47 @@
 {{ 'section-banner.css' | asset_url | stylesheet_tag }}
 
-<div id="Banner-{{ section.id }}">
-  <nav>
-        <div class="Header">
-        <div class='HeaderTextDiv'>
-          <span>QUESTIONS?</span>
-          <div> {% render 'icon-phone' %}</div>
-          <span>(929) 566-7788</span>
-        </div>
-        <div style='  display: flex;align-items: center;font-size: 20px;line-height: 28px;gap: 10px;height: 22px;font-weight: 500;'>
-          <div> {% render 'icon-us-flag' %}</div>
-          <span>US</span>
-        </div>
-      </div>
-  
+<div id="Banner-{{ section.id }} " class='Container'>
+  <!-- <image class='figma-image' loading='lazy' width="1440" height="3577" src="{{ 'figma.png' | asset_url }}" alt="figma image"></image> -->
+  <nav class="Header">
+    <div class='HeaderTextDiv'>
+      <span>QUESTIONS?</span>
+      <div> {% render 'icon-phone' %}</div>
+      <span>(929) 566-7788</span>
+    </div>
+
+    <div class="HeaderFlagDiv">
+      <div> {% render 'icon-us-flag' %}</div>
+      <span>US</span>
+    </div>
   </nav>
-  <div>
-   
-    <div><button>sign in</button></div>
+  <div class='content'>
+    <div class='LandingAppBar'>
+      <div class="upet-icon">{% render 'icon-upet' %}</div>
+      <div role='button' aria-disabled="false" tabindex="0" class="ButtonLink">
+        <div class="avatar-container">{% render 'icon-avatar' %}</div>
+        <div><span class="button-text">Sign In</span></div>
+      </div>
+    </div>
+    <div class="Grid">
+      <div >
+        <div class="MainTextContainer">
+          <h2 class="SuperpoweredTitle">SUPERPOWERED </h2>
+          <h2 class="IdentificationTitle">PET IDENTIFICATION</h2>
+          <h2 class="IdentificationTitleSecondLine">SYSTEM</h2>
+          <hr class="Divider">
+        </div>
+  
+        <p class="Description">Every ID your pet needs linked to their whole pack. </p>
+  
+        <button class='MainButton'>SHOP UPET</button>
+        
+        </div>
+          <div class="petImageContainer">
+            <image width='866' height='677' loading="lazy" src="{{ 'pet-image-header.png' | asset_url }}"></image>
+          </div>
+    </div>
   </div>
-  <div>
-    <div>
-      <div>
-        <h2>SUPERPOWERED </h2>
-        <h2>PET IDENTIFICATION</h2>
-        <h2>SYSTEM</h2>
-        <hr>
-      </div>
 
-      <p>Every ID your pet needs linked to their whole pack. </p>
-
-      <button>SHOP UPET</button>
-      
-      </div>
-        <div>image</div>
-      </div>
 </div>
 {% schema %}
 {
