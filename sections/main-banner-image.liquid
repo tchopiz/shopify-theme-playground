@@ -1,3 +1,4 @@
+{{ 'material-ui-button.css' | asset_url | stylesheet_tag}}
 {{ 'section-banner.css' | asset_url | stylesheet_tag }}
 
 <script src="{{ 'section-banner.js' | asset_url }}" defer></script>
@@ -40,8 +41,11 @@
         </div>
   
         <p class="Description">Every ID your pet needs linked to their whole pack. </p>
-  
-        <button class='MainButton'>SHOP UPET</button>
+        
+        <div class="button-contanier">
+          <button class="mui-btn mui-btn--primary">SHOP UPET</button>
+        </div>
+
         
         </div>
           <div class="petImageContainer">
@@ -51,18 +55,17 @@
   </div>
 </div>
 {% schema %}
+
 {
   "name": "t:sections.main-banner-image.name",
-  "tag":"section",
-  "settings":[
-  {
-
-    "type": "text",
-
-    "id": "header",
-
-    "label": "Header"
-
-  }]
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header"
+    }
+  ]
 }
+
 {% endschema %}

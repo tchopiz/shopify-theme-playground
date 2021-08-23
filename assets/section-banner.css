@@ -308,6 +308,48 @@ body {
   background-color: white;
 }
 
+.button-contanier {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  width: 250px;
+  border: none;
+}
+
+.button-contanier button {
+  background-color: rgb(2, 224, 177);
+  color: white !important;
+  height: 60px;
+  box-shadow: 0px 0px 6px -2px rgb(0 0 0 / 30%);
+  font-weight: 500;
+  border-radius: 2px;
+  border: none;
+  font-size: 16px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+span.ripple {
+  position: absolute; /* The absolute position we mentioned earlier */
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.button-contanier button:hover,
+.button-contanier button:focus {
+  background: rgb(2, 224, 177) none repeat scroll 0% 0%;
+  opacity: 0.9;
+}
+
 @media only screen and (max-width: 1200px) {
   .HeaderTextDiv {
     font-weight: 500;
