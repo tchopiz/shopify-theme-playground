@@ -312,8 +312,10 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 600;
-  width: 250px;
+  width: fit-content;
   border: none;
+  margin: 0;
+  display: flex;
 }
 
 .button-contanier button {
@@ -327,10 +329,12 @@ body {
   font-size: 16px !important;
   position: relative;
   overflow: hidden;
+  z-index: 1000;
+  padding: 1rem 2rem;
 }
 
 span.ripple {
-  position: absolute; /* The absolute position we mentioned earlier */
+  position: absolute;
   border-radius: 50%;
   transform: scale(0);
   animation: ripple 600ms linear;
