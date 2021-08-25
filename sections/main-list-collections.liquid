@@ -30,7 +30,7 @@
                 <div class="media media--{{ section.settings.image_ratio }} media--hover-effect overflow-hidden"
                   {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: collection.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
 					
-                 <img src="{{ collection.metafileds.collection.secondaryImage3}}" width=200 height=200>	
+                 <img src="{{ collection.metafiled.collection.secondaryImage3}}" width=200 height=200>	
                   <img
                     srcset="{%- if collection.featured_image.width >= 165 -%}{{ collection.featured_image | img_url: '165x' }} 165w,{%- endif -%}
                       {%- if collection.featured_image.width >= 360 -%}{{ collection.featured_image | img_url: '360x' }} 360w,{%- endif -%}
